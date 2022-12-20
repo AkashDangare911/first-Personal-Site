@@ -4,6 +4,54 @@ body{
     font-family: 'Merriweather', serif;
     color: #40514E;
 }
+/* ------------------ */
+header{
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    font-weight: bold;
+    width: 100%;
+    background-color: #E4F9F5;
+}
+header a:hover{
+    color:#11999E
+}
+li{
+    list-style: none;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: #66BFBF;
+}
+
+.container{
+    width: 1280px;
+    margin: auto;
+}
+.navbar{
+    width: 75%;
+    margin: auto;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+.logo{
+    font-size: 2rem;
+}
+@media(max-width:1280px){
+    .container{
+        width: 100%;
+    }
+}
+/* ------------------ */
 #name{
     margin: 50px auto 0px auto;
     font-size: 5.625rem;
@@ -22,13 +70,14 @@ h3{
     color: #11999E;
 }
 a{
+    font-size: 1.3rem;
     color: #88dee1;
     margin: 10px 20px;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
 }
 a:hover{
-    color: #90acad;
+    color: #b5f1f1;
 }
 p{
     line-height: 2;
@@ -66,7 +115,7 @@ p{
 .up-cloud{
     position: absolute;
     right: 400px;
-    top: 50px;
+    top: 120px;
 }
 #akash{
     height: 300px;
@@ -110,15 +159,17 @@ hr{
     background-image: linear-gradient(to bottom, #11cdd4, #11999e);
     -webkit-border-radius: 8;
     -moz-border-radius: 8;
+    
     border-radius: 8px;
     font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
     color: #d6e6ec;
-    font-size: 20px;
-    padding: 10px 20px 10px 20px;
+    padding: 10px 20px;
     text-decoration: none;
-  }
-  
+}
+
 .btn:hover {
+    color: #fff;
     background: #30e3cb;
     background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
     background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
@@ -126,10 +177,12 @@ hr{
     background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
     background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
     text-decoration: none;
-    color: #471a47; 
 }
+
+/* footer */
+
 .copyright{
-    color: #eaf6f6;
+    color: #84e7e7;
     font-size: 0.75rem;
     padding: 20px 0;
 }
